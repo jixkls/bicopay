@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from "fastify";
 
 export class HealthController {
-  async healthCheck(request: FastifyRequest, reply: FastifyReply) {
+  static async healthCheck(request: FastifyRequest, reply: FastifyReply) {
     try {
       reply.code(200).send({
         Message: "it works bettin :)",
